@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/ilucy/components",
+  "dest": "../../../lib/ilucy/components",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

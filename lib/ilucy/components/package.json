@@ -1,0 +1,27 @@
+{
+  "name": "@ilucy/components",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/master-app/"
+  },
+  "repository": {
+    "git": "https://github.com/lucy-i/master-app.git"
+  },
+  "main": "bundles/ilucy-components.umd.js",
+  "module": "fesm5/ilucy-components.js",
+  "es2015": "fesm2015/ilucy-components.js",
+  "esm5": "esm5/ilucy-components.js",
+  "esm2015": "esm2015/ilucy-components.js",
+  "fesm5": "fesm5/ilucy-components.js",
+  "fesm2015": "fesm2015/ilucy-components.js",
+  "typings": "ilucy-components.d.ts",
+  "metadata": "ilucy-components.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

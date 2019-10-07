@@ -4,5 +4,11 @@
   "peerDependencies": {
     "@angular/common": "^8.2.8",
     "@angular/core": "^8.2.8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/master-app/"
+  },
+  "repository": {
+    "git": "https://github.com/lucy-i/master-app.git"
   }
 }

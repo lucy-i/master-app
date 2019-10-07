@@ -20,16 +20,16 @@
     ],
     "paths": {
       "@ilucy/components": [
-        "dist/ilucy/components"
+        "lib/ilucy/components"
       ],
       "@ilucy/components/*": [
-        "dist/ilucy/components/*"
+        "lib/ilucy/components/*"
       ],
       // "@ilucy/theme": [
-      //   "dist/ilucy/theme"
+      //   "lib/ilucy/theme"
       // ],
       // "@ilucy/theme/*": [
-      //   "dist/ilucy/theme/*"
+      //   "lib/ilucy/theme/*"
       // ]
       "@ilucy/theme": [
         "projects/ilucy/theme/src/public-api"
