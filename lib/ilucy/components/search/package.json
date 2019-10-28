@@ -1,0 +1,21 @@
+{
+  "name": "@ilucy/components/search",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8"
+  },
+  "main": "bundles/ilucy-components-search.umd.js",
+  "module": "fesm5/ilucy-components-search.js",
+  "es2015": "fesm2015/ilucy-components-search.js",
+  "esm5": "esm5/ilucy-components-search.js",
+  "esm2015": "esm2015/ilucy-components-search.js",
+  "fesm5": "fesm5/ilucy-components-search.js",
+  "fesm2015": "fesm2015/ilucy-components-search.js",
+  "typings": "ilucy-components-search.d.ts",
+  "metadata": "ilucy-components-search.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

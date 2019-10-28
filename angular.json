@@ -196,6 +196,41 @@
           }
         }
       }
+    },
+    "@ilucy/components/search": {
+      "projectType": "library",
+      "root": "projects/ilucy/search",
+      "sourceRoot": "projects/ilucy/search/src",
+      "prefix": "ilc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ilucy/search/tsconfig.lib.json",
+            "project": "projects/ilucy/search/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ilucy/search/src/test.ts",
+            "tsConfig": "projects/ilucy/search/tsconfig.spec.json",
+            "karmaConfig": "projects/ilucy/search/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ilucy/search/tsconfig.lib.json",
+              "projects/ilucy/search/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "master-sample"

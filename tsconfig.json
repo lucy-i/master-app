@@ -25,17 +25,17 @@
       "@ilucy/components/*": [
         "lib/ilucy/components/*"
       ],
-      // "@ilucy/theme": [
-      //   "lib/ilucy/theme"
-      // ],
-      // "@ilucy/theme/*": [
-      //   "lib/ilucy/theme/*"
-      // ]
       "@ilucy/theme": [
         "projects/ilucy/theme/src/public-api"
       ],
       "@ilucy/theme/*": [
         "projects/ilucy/theme/src/lib/*"
+      ],
+      "@ilucy/components/search": [
+        "dist/ilucy/components/search"
+      ],
+      "@ilucy/components/search/*": [
+        "dist/ilucy/components/search/*"
       ]
     }
   },
