@@ -32,10 +32,10 @@
         "projects/ilucy/theme/src/lib/*"
       ],
       "@ilucy/components/search": [
-        "dist/ilucy/components/search"
+        "projects/ilucy/search/src/public-api"
       ],
       "@ilucy/components/search/*": [
-        "dist/ilucy/components/search/*"
+        "projects/ilucy/search/src/lib/*"
       ]
     }
   },

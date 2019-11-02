@@ -1,0 +1,41 @@
+<div style="
+display: flex;
+flex-flow: column;
+">
+    <div style="display: inline-flex;background: #ff4081;border-radius: 28px 28px 28px 0px;box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2), 10px 0px 5px rgba(0, 0, 0, 0.12), 0px 1px 4px rgba(0, 0, 0, 0.14);">
+        <button mat-fab aria-label="Example icon-button with a heart icon" style="
+    box-shadow: 0 0 0 0 rgba(0,0,0,.2), 0 0 0 0 rgba(0,0,0,.14), 0 0 0 0 rgba(0,0,0,.12);
+">
+            <mat-icon>search</mat-icon>
+        </button>
+        <div style="
+        display: flex;
+        flex: auto;
+    ">
+            <mat-form-field class="example-full-width" style="font-size: 0.8rem;width: 100%;">
+                <input matInput placeholder="Search..." [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+                <!-- <mat-hint>Errors appear instantly!</mat-hint>         -->
+            </mat-form-field>
+        </div>
+        <button mat-fab aria-label="Example icon-button with a heart icon" style="
+    box-shadow: 0 0 0 0 rgba(0,0,0,.2), 0 0 0 0 rgba(0,0,0,.14), 0 0 0 0 rgba(0,0,0,.12);
+">
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+    <div style="
+    padding: 56px 32px 16px 28px;
+    position: absolute;
+    width: calc(100% - 88px);
+    background: #ffffff;
+    z-index: -1;
+    border-radius: 28px;
+    min-height: 111px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+">
+        <div>
+            Window
+        </div>
+
+    </div>
+</div>

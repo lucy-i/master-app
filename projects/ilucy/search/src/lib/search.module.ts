@@ -1,11 +1,20 @@
 import { NgModule } from '@angular/core';
 import { SearchComponent } from './search.component';
+import { MatButtonModule, MatInputModule, MatIconModule } from '@angular/material';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [SearchComponent],
   imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule
   ],
   exports: [SearchComponent]
 })
