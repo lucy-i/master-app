@@ -1,0 +1,78 @@
+ilc-search {
+    display: block;
+
+    .ilc-search-contailer {
+        display: flex;
+        flex-flow: column;
+
+        .ilc-search-header {
+            display: inline-flex;
+            background: #3f51b5;
+            border-radius: 28px 28px 28px 0px;
+            box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2), 10px 0px 5px rgba(0, 0, 0, 0.12), 0px 1px 4px rgba(0, 0, 0, 0.14);
+            color: #ffffff;
+ 
+    width: fit-content;
+
+            >div {
+                display: flex;
+                flex: auto;
+            }
+
+            .mat-form-field {
+                top: 5px;
+                font-size: 0.8rem;
+                width: 100%;
+            }
+
+            .mat-form-field-appearance-legacy .mat-form-field-underline {
+                background-color: rgba(255, 255, 255, 0.42);
+            }
+
+            .mat-form-field-ripple {
+                background-color: rgba(255, 255, 255, 0.87);
+            }
+
+            .mat-form-field-appearance-legacy .mat-form-field-label {
+                color: rgba(255, 255, 255, 0.54);
+            }
+
+            .mat-fab {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
+            }
+        }
+
+        .ilc-search-body {
+            padding: 16px 16px 16px 16px;            
+            width: 230px;
+            max-width: calc(100% - 60px);
+            background: #ffffff;
+            border-radius: 0px 0px 28px 28px;
+            min-height: 111px;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        &.closed {
+            .ilc-search-header {
+                border-radius: 50%;
+                >div {
+                    width: 0px;
+                    overflow: hidden;
+                    min-width: 0px;
+                    max-width: 0px;
+                }
+                .close-button {
+                    visibility: hidden;
+                    height: 0px;
+                    width: 0px;
+                }
+            }
+            .ilc-search-body {
+                min-height: 0px;
+                overflow: hidden;
+                padding: 0px 16px;
+                height: 0px;
+            }
+        }
+    }
+}
