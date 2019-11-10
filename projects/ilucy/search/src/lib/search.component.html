@@ -1,5 +1,5 @@
-<div class="ilc-search-contailer" [class.closed]="isClosed">
-    <div class="ilc-search-header">
+<div class="ilc-search-contailer" [class.open]="!isClosed">
+    <div class="ilc-search-header" matRipple>
         <button color="primary" mat-fab aria-label="Example icon-button with a heart icon" (click)="isClosed=false">
             <mat-icon>search</mat-icon>
         </button>
@@ -9,13 +9,15 @@
                 <!-- <mat-hint>Errors appear instantly!</mat-hint>         -->
             </mat-form-field>
         </div>
-        <button mat-fab aria-label="Example icon-button with a heart icon" color="primary" (click)="isClosed=true" class="close-button">
+        <button mat-fab aria-label="Example icon-button with a heart icon" color="primary" (click)="isClosed=true"
+            class="close-button">
             <mat-icon>close</mat-icon>
         </button>
     </div>
-    <div class="ilc-search-body">
+    <div class="ilc-search-body" matRipple>
         <div>
             Window
         </div>
     </div>
+
 </div>

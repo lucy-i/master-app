@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { SearchComponent } from './search.component';
-import { MatButtonModule, MatInputModule, MatIconModule } from '@angular/material';
+import { MatButtonModule, MatInputModule, MatIconModule, MatRippleModule } from '@angular/material';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    MatRippleModule,
     MatButtonModule,
     MatInputModule,
     MatIconModule
