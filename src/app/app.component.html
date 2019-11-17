@@ -1,1 +1,28 @@
 <ilc-search></ilc-search>
+<style>
+    button:not(:first-child) {
+        visibility: hidden;
+        height: 0px;
+    }
+</style>
+
+<div
+    style="margin: 50px;border-radius: 24px; display: inline-grid;box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);    color: #3f51b5;">
+    <button mat-raised-button style="line-height: 48px;min-width: 180px;box-shadow: none;border-top-left-radius: 24px;
+    border-top-right-radius: 24px;">
+        <mat-icon style="
+        position: absolute;
+        left: 12px;
+        top: 12px;
+    ">arrow_drop_down</mat-icon>
+        Menu
+
+    </button>
+    <!-- <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu> -->
+    <button mat-raised-button style="line-height: 48px;min-width: 180px;box-shadow: none;">Menu</button>
+    <button mat-raised-button style="line-height: 48px;min-width: 180px;box-shadow: none;border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;">Menu</button>
+</div>

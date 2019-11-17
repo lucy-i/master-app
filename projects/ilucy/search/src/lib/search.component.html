@@ -1,5 +1,6 @@
 <div class="ilc-search-contailer" [class.open]="!isClosed">
-    <div class="ilc-search-header" matRipple>
+    <!-- <div class="ilc-search-ripple" matRipple (click)="isClosed=false"></div> -->
+    <div class="ilc-search-header">
         <button color="primary" mat-fab aria-label="Example icon-button with a heart icon" (click)="isClosed=false">
             <mat-icon>search</mat-icon>
         </button>
@@ -14,9 +15,20 @@
             <mat-icon>close</mat-icon>
         </button>
     </div>
-    <div class="ilc-search-body" matRipple>
+    <div class="ilc-search-body">
         <div>
             Window
+        </div>
+        <div class="ilc-search-tool">
+            <button class="" mat-icon-button>
+                <mat-icon>bookmarks</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon>share</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon>transform</mat-icon>
+            </button>
         </div>
     </div>
 

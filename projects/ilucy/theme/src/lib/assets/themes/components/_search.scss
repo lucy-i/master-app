@@ -1,22 +1,44 @@
 ilc-search {
-    display: block;
+    display: inline-block;
 
     .ilc-search-contailer {
+        position: relative;
         display: flex;
         flex-flow: column;
+        width: 56px;
+
+        &.open {
+            width: 300px;
+            min-width: 300px;
+        }
+
+        .ilc-search-ripple {
+            min-height: 100%;
+            min-width: calc(100% - 38px);
+            // z-index: 1;
+            height: 100px;
+            position: absolute;
+            left: 0px;
+            border-radius: 28px;
+        }
 
         .ilc-search-header {
             display: inline-flex;
             background: #3f51b5;
             border-radius: 28px 28px 28px 0px;
-            box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2), 10px 0px 5px rgba(0, 0, 0, 0.12), 0px 1px 4px rgba(0, 0, 0, 0.14);
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
             color: #ffffff;
-
             width: fit-content;
+            width: 100%;
 
             >div {
                 display: flex;
                 flex: auto;
+            }
+
+            .mat-fab:not([disabled]):active:not([class*=mat-elevation-z]),
+            .mat-mini-fab:not([disabled]):active:not([class*=mat-elevation-z]) {
+                box-shadow: none;
             }
 
             .mat-form-field {
@@ -43,13 +65,23 @@ ilc-search {
         }
 
         .ilc-search-body {
+            position: relative;
             padding: 16px 16px 16px 16px;
-            width: 230px;
-            max-width: calc(100% - 60px);
             background: #ffffff;
             border-radius: 0px 0px 28px 28px;
-            min-height: 111px;
+            min-height: 250px;
+            width: calc(100% - 62px);
             box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+
+            .ilc-search-tool {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                width: 40px;
+                text-align: center;
+                color: #b1b1b1;
+                border-bottom-right-radius: 48px;
+            }
         }
 
         &:not(.open) {

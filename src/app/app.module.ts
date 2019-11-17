@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchModule } from '@ilucy/components/search';
+import { MatMenuModule, MatButtonModule, MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,10 @@ import { SearchModule } from '@ilucy/components/search';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SearchModule
+    SearchModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
